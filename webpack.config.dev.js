@@ -4,7 +4,7 @@ var path = require("path");
 exports.default = {
     devtool: 'inline-source-map',
     entry: [path.resolve(__dirname, 'src/index')],
-    target: 'web',
+    target: "web",
     output: {
         path: path.resolve(__dirname, 'src'),
         publicPath: '/',
@@ -22,6 +22,8 @@ exports.default = {
                 exclude: /node_modules/
             }],
     },
-    resolve: { extensions: [".tsx", ".ts", ".js"] }
+    resolve: {
+        extensions: [".tsx", ".ts", ".js"]
+    },
 };
 //# sourceMappingURL=webpack.config.dev.js.map

@@ -1,10 +1,11 @@
 import * as path from 'path';
 import * as webpack from 'webpack';
 
-export default {
+export default  {
     devtool: 'inline-source-map',
+    
     entry: [path.resolve(__dirname, 'src/index')],
-    target: 'web',
+    target:"web",
     output: {
         path: path.resolve(__dirname, 'src'),
         publicPath: '/',
@@ -22,6 +23,9 @@ export default {
             exclude: /node_modules/
         }],
     },
-    resolve: { extensions: [".tsx", ".ts", ".js"] }
-};
+    resolve: {
+        extensions: [".tsx", ".ts", ".js"]
+    },
+    
+} as webpack.Configuration;
 
