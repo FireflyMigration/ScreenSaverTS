@@ -1,0 +1,11 @@
+{
+  "name": "screen-saver-ts",
+  "version": "0.0.1",
+  "description": "typescript based screen saver",
+  "main": "index.js",
+  "scripts": {
+    "start":"ts-node buildScripts/srcServer.ts"
+  },
+  "author": "Noam",
+  "license": "ISC"
+}
