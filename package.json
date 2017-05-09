@@ -16,6 +16,8 @@
     "@types/webpack-dev-middleware": "^1.9.1",
     "express": "^4.15.2",
     "opn": "^5.0.0",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.3.2",
     "webpack": "^2.5.1",
     "webpack-dev-middleware": "^1.10.2"
   }
