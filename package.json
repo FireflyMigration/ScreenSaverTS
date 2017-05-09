@@ -4,8 +4,9 @@
   "description": "typescript based screen saver",
   "main": "index.js",
   "scripts": {
-    "start":"ts-node buildScripts/srcServer.ts"
+    "start": "ts-node buildScripts/srcServer.ts"
   },
   "author": "Noam",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }

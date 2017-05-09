@@ -1,13 +1,11 @@
 "use strict";
-var b = new Image();
-b.onload = function () {
-    var playGround = document.getElementById('playground');
-    if (playGround != null) {
-        b.style.width = '100%';
-        b.style.height = 'auto';
-        playGround.appendChild(b);
-        b.style.marginTop = ((playGround.clientHeight - b.height) / 2).toString() + "px";
-    }
-};
-b.src = '/1.jpg';
+Object.defineProperty(exports, "__esModule", { value: true });
+var myImage_1 = require("./myImage");
+var playGround = document.getElementById('playground');
+if (playGround) {
+    var i1 = new myImage_1.myImage(playGround);
+    var i2 = new myImage_1.myImage(playGround);
+    i1.setOtherImage(i2);
+    i1.startWork(function (x) { return x(); });
+}
 //# sourceMappingURL=index.js.map
