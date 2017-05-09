@@ -16,8 +16,13 @@ export class myImage {
     startWork(readyToShow: (show: () => void) => void): void {
         getNextImage(src => {
             this.image.onload = () => {
-                this.image.style.width = "95%";
-                this.image.style.height = 'auto';
+                if (this.image.naturalHeight > this.image.naturalWidth) { 
+                    this.image.style.height    = "85%";
+                    this.image.style.width = 'auto';
+                } else {
+                    this.image.style.width = "95%";
+                    this.image.style.height = 'auto';
+                }
                 this.image.style.opacity = '0';
 
 

@@ -14,8 +14,14 @@ var myImage = (function () {
         var _this = this;
         getNextImage(function (src) {
             _this.image.onload = function () {
-                _this.image.style.width = "95%";
-                _this.image.style.height = 'auto';
+                if (_this.image.naturalHeight > _this.image.naturalWidth) {
+                    _this.image.style.height = "85%";
+                    _this.image.style.width = 'auto';
+                }
+                else {
+                    _this.image.style.width = "95%";
+                    _this.image.style.height = 'auto';
+                }
                 _this.image.style.opacity = '0';
                 readyToShow(function () {
                     _this.zoom(_this.image);

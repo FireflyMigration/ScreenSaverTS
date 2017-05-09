@@ -1,5 +1,5 @@
 export default {
-    folders: ['c:/temp'],
+    folders: ['c:/temp/images'],
     extentions:['.jpg']
     
 }
